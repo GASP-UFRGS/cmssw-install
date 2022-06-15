@@ -48,6 +48,8 @@ cd build
 wget http://cmsrep.cern.ch/cmssw/bootstrap.sh;
 sh ./bootstrap.sh -a ${architecture} setup;
 ./common/cmspkg -a ${architecture} install cms+cmssw+CMSSW_${CMSSW_version};
+sudo mkdir -p cvmfs/cms.cern.ch 
+sudo ln -s /home/cmsusr/cmssw-install/build/* /cvmfs/cms.cern.ch
 
 echo "CMSSW install ended succesfully"
 
