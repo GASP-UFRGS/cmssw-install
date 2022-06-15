@@ -1,0 +1,26 @@
+<site-local-config>
+  <site name="T3_CH_Volunteer">
+    <event-data>
+      <catalog url="trivialcatalog_file:/cvmfs/cms.cern.ch/SITECONF/local/PhEDEx/storage.xml?protocol=http"/>
+    </event-data>
+    <local-stage-out>
+      <command value="gfal2"/>
+      <option value="--nochecksum"/>
+      <catalog url="trivialcatalog_file:/cvmfs/cms.cern.ch/SITECONF/local/PhEDEx/storage.xml?protocol=https"/>
+      <se-name value="data-bridge.cern.ch"/>
+      <phedex-node value="T3_CH_CMSAtHome"/>
+    </local-stage-out>
+    <calib-data>
+      <frontier-connect>
+       <proxyconfig url="http://localhost/wpad.dat"/>
+       <proxyconfig url="http://lhchomeproxy.cern.ch/wpad.dat"/>
+       <proxyconfig url="http://lhchomeproxy.fnal.gov/wpad.dat"/>
+       <server url="http://cms-frontier.openhtc.io:8080/FrontierInt"/>
+       <server url="http://cms1-frontier.openhtc.io:8080/FrontierInt"/>
+       <server url="http://cms2-frontier.openhtc.io:8080/FrontierInt"/>
+       <server url="http://cms3-frontier.openhtc.io:8080/FrontierInt"/>
+       <server url="http://cms4-frontier.openhtc.io:8080/FrontierInt"/>
+      </frontier-connect>
+    </calib-data>
+  </site>
+</site-local-config>

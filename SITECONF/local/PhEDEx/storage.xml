@@ -1,0 +1,9 @@
+<storage-mapping>
+
+<lfn-to-pfn protocol="https" path-match="/+store/(.*)" result="https://data-bridge.cern.ch/myfed/cms-output/store/$1"/>
+<lfn-to-pfn protocol="srmv2" path-match="/+store/(.*)" result="https://data-bridge.cern.ch/myfed/cms-output/store/$1"/>
+<lfn-to-pfn protocol="http" path-match="/+store/(.*)" result="http://data-bridge.cern.ch/myfed/cms-output/store/$1"/>
+
+</storage-mapping>
+
+

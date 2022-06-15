@@ -1,0 +1,1 @@
+( regexp("ireid",WMAgent_SubTaskName) || regexp("fanzago",WMAgent_SubTaskName) ) && ( RecentJobStarts < 1 )
