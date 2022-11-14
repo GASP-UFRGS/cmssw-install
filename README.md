@@ -22,6 +22,14 @@ If an error about permissions appear, type `chmod +x cmssw_install.sh` and redo 
 One can also see all the releases compatible with the architecture chosen:
 `scram list CMSSW`
 
+In order to load the PPS package:
+
+`git cms-addpkg Geometry/VeryForwardData`
+
+Then, you compile using:
+
+`scram b`
 
 Comments and suggestions are geatly appreciated.
+
 
