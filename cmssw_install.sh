@@ -45,11 +45,12 @@ echo "CMSSW_version=${CMSSW_version}"
 mkdir build
 cp -r SITECONF/ build/
 cd build
-wget http://cmsrep.cern.ch/cmssw/bootstrap.sh;
+wget http://cmsrep.cern.ch/cmssw/repos/bootstrap.sh;
+sudo rpm -e --nodeps curl;
 sh ./bootstrap.sh -a ${architecture} setup;
 ./common/cmspkg -a ${architecture} install cms+cmssw+CMSSW_${CMSSW_version};
 sudo mkdir -p cvmfs/cms.cern.ch 
-sudo ln -s /home/cmsusr/cmssw-install/build/* /cvmfs/cms.cern.ch
+sudo ln -s /home/cmsusr/cmssw-install/build/* cvmfs/cms.cern.ch
 
 echo "CMSSW install ended succesfully"
 
