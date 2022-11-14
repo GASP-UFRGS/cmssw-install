@@ -12,4 +12,16 @@ By default, it will install the CMSSW_12_3_4 version with the slc7_amd64_gcc10 a
 
 If an error about permissions appear, type `chmod +x cmssw_install.sh` and redo the command above. 
 
+
+## Setting up the CMSSW environment
+
+`scram project CMSSW_12_3_4`
+`cd CMSSW_12_3_4/src`
+`cmsenv`
+
+One can also see all the releases compatible with the architecture chosen:
+`scram list CMSSW`
+
+
 Comments and suggestions are geatly appreciated.
+
